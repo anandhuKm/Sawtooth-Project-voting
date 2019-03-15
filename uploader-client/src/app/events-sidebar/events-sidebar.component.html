@@ -1,0 +1,25 @@
+<div *ngFor="let blockinfo of blockInfoChain.slice().reverse()">
+  <div class="card" (click)="openFullScreen($event, blockinfo.blockId)">
+    <div class="container">
+      <h4><b>Block Number : {{blockinfo.blockNum}}</b></h4>
+      <p *ngIf="blockinfo.action != null">Performed Action : {{blockinfo.action}} </p>
+      <p *ngIf="blockinfo.action != null">Message : {{blockinfo.actionText}}</p>
+      <p *ngIf="blockinfo.action != null">{{blockinfo.cookieCount}}</p>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" *ngIf="showDetails" [ngClass]="{'modal-hide': !showDetail, 'modal-show': showDetails}">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" (click)="showDetails=false">&times;</span>
+      <h2>Block Details</h2>
+    </div>
+    <div class="modal-body">
+      <pre>{{blockContents.batches | json}}</pre>
+    </div>
+  </div>
+
+</div>

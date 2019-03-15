@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>welcome {{vo_name}}, please give your vote</h1>
+    <ul class="responsive-table">
+      <li class="table-row" *ngFor="let item of candidateDetails; index as i;">
+        <div class="">{{i+1}}</div>
+        <div class="">{{item.name}}</div>
+        <div class="">{{item.sign}}</div>
+       <button class="button-secondary" (click)="vote(i)">vote</button>
+      </li>
+     
+    </ul>
+  </div>

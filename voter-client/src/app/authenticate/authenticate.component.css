@@ -1,0 +1,95 @@
+
+
+.login {
+  max-width: 500px;
+	padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000;
+	margin: 10px auto;
+	padding: 20px;
+	border: 1px solid rgb(161, 159, 159);
+	border-radius: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input[type="password"], input[type="text"] {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+	border: none;
+	border-bottom: 1px solid gray;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.show-password {
+  display: block;
+  height: 16px;
+  margin: 26px 0 0 28px;
+  width: 87px;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 16px;
+  opacity: 0;
+  position: relative;
+  width: 64px;
+}
+input[type="checkbox"]:checked {
+  left: 29px;
+  width: 58px;
+}
+.toggle {
+  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
+  display: block;
+  height: 16px;
+  margin-top: -20px;
+  width: 87px;
+  z-index: -1;
+}
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+.forgot {
+  color: #7f7f7f;
+  display: inline-block;
+  font: 12px/1 sans-serif;
+  left: -19px;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  transition: color .4s;
+}
+.forgot:hover { color: #3b3b3b }
+
+input[type="submit"] {
+  position: relative;
+	display: block;
+	padding: 5px 25px;
+	color: rgb(0, 0, 0);
+	margin: 0 auto;
+	background-color: #ffffff;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: capitalize;
+	text-align: center;
+	font-style: normal;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  height: 12px;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 270px;
+}
+
+
+input[type="submit"]:active {
+ 
+}
